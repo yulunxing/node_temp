@@ -6,6 +6,5 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="node_temp node_modules" level="project" />
     <orderEntry type="library" name="node_mvc node_modules" level="project" />
-    <orderEntry type="library" name="node_mvc2 node_modules" level="project" />
   </component>
 </module>
