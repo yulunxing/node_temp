@@ -6,7 +6,11 @@ var app = express();
 var expressControllers = require('express-controller');
 var router = express.Router();
 
+var bodyParser = require('body-parser');
+
 app.use(router);
+//对所有app的请求都进行拦截和解析
+app.use(bodyParser.json());
 
 //绑定控制器
 expressControllers.setDirectory(__dirname + '/controllers').bind(router);
