@@ -1,0 +1,1 @@
+安装MYSQL数据库,并新建表temp,导入temp.sql

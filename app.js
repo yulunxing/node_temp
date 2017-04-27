@@ -15,6 +15,9 @@ app.use(bodyParser.json());
 //绑定控制器
 expressControllers.setDirectory(__dirname + '/controllers').bind(router);
 
+
+
+
 var server = app.listen(3000, function(){
     var host = server.address().address;
     var port = server.address().port;

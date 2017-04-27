@@ -5,7 +5,7 @@
 var mysql = require('mysql');
 var config = require('../config/config');
 module.exports = {
-    get_tempget : function(req, res){
+   /* get_tempget : function(req, res){
         var connection = mysql.createConnection(config.mysql);
 
         //定义查询语句 WHERE name='" + req.request.username + "'"
@@ -21,8 +21,8 @@ module.exports = {
             result = JSON.stringify(result);
             console.log(result);
         });
-    },
-    /*get_tempget : function(req, res){
+    },*/
+    get_tempget : function(req, res){
         var arr;
         tempModel.selectDb(req, res, function(err, result){
             res.writeHead(200, {"Content-Type": "text/html;charset=utf-8"});
@@ -30,7 +30,7 @@ module.exports = {
             console.log(result);
             res.end();
         });
-    },*/
+    },
     get_index : function(req, res) {
         res.writeHead(200, {"Content-Type": "text/html;charset=utf-8"});
         console.log("method=" + req.method);
