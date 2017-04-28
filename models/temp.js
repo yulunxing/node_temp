@@ -11,7 +11,8 @@ module.exports = {
     selectDb : function(req, res, callback) {
         pool.getConnection(function (err, connection){
             //定义查询语句 WHERE name='" + req.request.username + "'"
-            var sql = "SELECT * FROM test_user WHERE name='hank'";
+            console.log(JSON.stringify(req.request));
+            var sql = "SELECT * FROM user WHERE name='hank'";
             connection.query(sql, function(err, result){
                 result = JSON.stringify(result);
 

@@ -1,9 +1,8 @@
 /**
  * Created by Administrator on 2017/4/18.
  */
-/*var tempModel = require("../models/temp");*/
-var mysql = require('mysql');
-var config = require('../config/config');
+var tempModel = require("../models/temp");
+
 module.exports = {
    /* get_tempget : function(req, res){
         var connection = mysql.createConnection(config.mysql);
@@ -33,15 +32,11 @@ module.exports = {
     },
     get_index : function(req, res) {
         res.writeHead(200, {"Content-Type": "text/html;charset=utf-8"});
-        console.log("method=" + req.method);
-        console.log("baseUrl=" + req.baseUrl);
-        console.log("path=" + req.path);
-        console.log("user-agent=" + req.headers['user-agent']);
-        //获取请求头
-        console.log(req.get('user-agent'));
-        console.log("req=" + req.query.name);
-        console.log("res=" + res);
-        res.end("这是get请求方式\n");
+
+        res.end("这是index,首页\n");
+    },
+    get_login : function(req, res) {
+        //
     },
     get_finest : function(req, res) {
         res.writeHead(200, {"Content-Type" : "text/html;charset=utf-8"});
