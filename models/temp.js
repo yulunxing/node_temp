@@ -15,7 +15,7 @@ module.exports = {
             var sql = "SELECT * FROM user WHERE name='hank'";
             connection.query(sql, function(err, result){
                 result = JSON.stringify(result);
-
+                console.log(result);
                 callback(err, result);
 
                 connection.release();
